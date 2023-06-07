@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "serversync_fabric_loader",
+  "version": "${version}",
+
+  "name": "ServerSync Fabric Loader",
+  "description": "A loader for Fabric to start ServerSync's server automatically when fabric starts. This exists for admins who don't have access to running commands on their server host, if you can run commands then just start ServerSync from a script instead.",
+  "authors": [
+    "DevilsThumb, port from: Rheimus"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/rheimus/serversync-forge-loader/tree/master"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "ServersyncLogo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "serversync.fabric.loader.ServerSyncLoader"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
